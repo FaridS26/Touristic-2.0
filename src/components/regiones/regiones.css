@@ -1,0 +1,13 @@
+#regiones {
+    margin-top: 100px;
+    font-size: 30px;
+}
+#regiones img{
+    width: 400px;
+}
+
+#regiones h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: left; 
+}
