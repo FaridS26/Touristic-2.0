@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import "./login.css";
+import turistic from '../../assets/Turistic.jpg';
 
 export default class login extends React.Component {
     constructor(props) {
@@ -9,26 +11,37 @@ export default class login extends React.Component {
     render() {
         return (  
             <Container id="login-container">
-                <Form>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
+        <Row >
+            <Col>
+            <Form>
+            <Form>
+                <Form.Group>
+                    <Form.Label>Correo Electrónico</Form.Label>
+                        <Form.Control type="email" placeholder="Ingrese el correo" />
                     </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                    <Form.Group>
+                        <Form.Label>Contraseña</Form.Label>
+                        <Form.Control type="password" placeholder="Contraseña" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
+                    <Form.Group>
+                        <Form.Check type="checkbox" label="Mantener la sesión iniciada" />
+                        </Form.Group>
+                    <Button 
+                    variant="primary" 
+                    type="submit"
+                    >
+                    Iniciar sesión
                     </Button>
-                </Form>
+                    <p>¿Aún no se ha registrado? Registrese <a href="/register"><b>aquí</b></a></p>
+                    </Form>
+            </Form>
+            </Col>
+            <Col>
+                <img src={turistic} alt=""/>
+            </Col>
+        </Row>
+        <Row>
+        </Row>
             </Container>
         );
     }

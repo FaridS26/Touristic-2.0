@@ -1,0 +1,21 @@
+#login-container1 {
+    margin-top: 50px;
+    margin-left: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#login-container1 h2,
+#login-container1 button,
+#login-container1 form{
+    width: 300px;
+    margin-top: 20px;
+}
+#login-container1 button {
+    margin-top: 15px;
+}
+
+#login-container1 img{
+    width: 400px;
+}

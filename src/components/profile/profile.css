@@ -1,0 +1,8 @@
+#Table{
+    margin-top: 15%;
+}
+#Table h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+}
